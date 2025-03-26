@@ -63,33 +63,34 @@
 
 .wing {
     position: absolute;
-    width: 120px; /* Adjust as needed */
-    animation: flyIn 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards;
+    width: 120px; /* Adjust size */
+    animation: flyIn 2s ease-in-out forwards, bwLoop 3s infinite;
 }
 
 .left-wing {
-    transform: translateX(-40px); /* Bring it closer */
-    animation: leftWingFly 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards, bwLoop 3s infinite;
+    transform: translateX(-10px); /* Bring wings much closer */
+    animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
 }
 
 .right-wing {
-    transform: translateX(40px); /* Bring it closer */
-    animation: rightWingFly 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards, bwLoop 3s infinite;
+    transform: translateX(10px); /* Bring wings much closer */
+    animation: rightWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
 }
 
 @keyframes leftWingFly {
     0% { transform: translateX(-200px); opacity: 0; }
-    100% { transform: translateX(-20px); opacity: 1; }
+    100% { transform: translateX(-10px); opacity: 1; }
 }
 
 @keyframes rightWingFly {
     0% { transform: translateX(200px); opacity: 0; }
-    100% { transform: translateX(20px); opacity: 1; }
+    100% { transform: translateX(10px); opacity: 1; }
 }
 
+/* Removed fadeOut to keep logo visible */
 @keyframes fadeOut {
     0% { opacity: 1; }
-    100% { opacity: 0; }
+    100% { opacity: 1; } /* No more fading out */
 }
 
 /* Black & White to Normal effect */
@@ -98,6 +99,12 @@
     50% { filter: grayscale(0%); }
     100% { filter: grayscale(100%); }
 }
+
+/* Extra space at the bottom */
+.extra-space {
+    height: 300px;
+}
+
 
 
         }
