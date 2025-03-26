@@ -68,29 +68,37 @@
 }
 
 .left-wing {
-    transform: translateX(-100px);
-    animation-name: leftWingFly;
+    transform: translateX(-40px); /* Bring it closer */
+    animation: leftWingFly 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards, bwLoop 3s infinite;
 }
 
 .right-wing {
-    transform: translateX(100px);
-    animation-name: rightWingFly;
+    transform: translateX(40px); /* Bring it closer */
+    animation: rightWingFly 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards, bwLoop 3s infinite;
 }
 
 @keyframes leftWingFly {
     0% { transform: translateX(-200px); opacity: 0; }
-    100% { transform: translateX(-10px); opacity: 1; }
+    100% { transform: translateX(-20px); opacity: 1; }
 }
 
 @keyframes rightWingFly {
     0% { transform: translateX(200px); opacity: 0; }
-    100% { transform: translateX(10px); opacity: 1; }
+    100% { transform: translateX(20px); opacity: 1; }
 }
 
 @keyframes fadeOut {
     0% { opacity: 1; }
     100% { opacity: 0; }
 }
+
+/* Black & White to Normal effect */
+@keyframes bwLoop {
+    0% { filter: grayscale(100%); }
+    50% { filter: grayscale(0%); }
+    100% { filter: grayscale(100%); }
+}
+
 
         }
     </style>
