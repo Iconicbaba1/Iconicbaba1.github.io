@@ -54,30 +54,44 @@
         
         /* Animated Logo */
         .logo-container {
-            position: relative;
-            height: 200px;
-            overflow: hidden;
-        }
-        .wing {
-            position: absolute;
-            width: 100px;
-            animation: flyIn 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards;
-        }
-        .left-wing {
-            left: -150px;
-            animation-delay: 0s;
-        }
-        .right-wing {
-            right: -150px;
-            animation-delay: 0s;
-        }
-        @keyframes flyIn {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(0); }
-        }
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            100% { opacity: 0; }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.wing {
+    position: absolute;
+    width: 120px; /* Adjust as needed */
+    animation: flyIn 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards;
+}
+
+.left-wing {
+    transform: translateX(-100px);
+    animation-name: leftWingFly;
+}
+
+.right-wing {
+    transform: translateX(100px);
+    animation-name: rightWingFly;
+}
+
+@keyframes leftWingFly {
+    0% { transform: translateX(-200px); opacity: 0; }
+    100% { transform: translateX(-10px); opacity: 1; }
+}
+
+@keyframes rightWingFly {
+    0% { transform: translateX(200px); opacity: 0; }
+    100% { transform: translateX(10px); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
         }
     </style>
 </head>
