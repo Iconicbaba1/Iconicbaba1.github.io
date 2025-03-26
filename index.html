@@ -4,13 +4,13 @@
     <title>ICONIC BABA</title>
     <style>
         @font-face {
-            font-family: 'RusticRoadway';
-            src: url('https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/main/GothTitan-0W5md.ttf') format('turetype');
+            font-family: 'GothTitan';
+            src: url('https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/main/GothTitan-0W5md.ttf') format('truetype');
         }
         body {
             background-color: #121212;
             color: #fff;
-            font-family: 'authoritative', sans-serif;
+            font-family: 'GothTitan', sans-serif;
             text-align: center;
             margin: 0;
         }
@@ -51,62 +51,57 @@
             display: block;
             margin-top: 8px;
         }
-        
         /* Animated Logo */
         .logo-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
 
-.wing {
-    position: absolute;
-    width: 120px; /* Adjust size */
-    animation: flyIn 2s ease-in-out forwards, bwLoop 3s infinite;
-}
+        .wing {
+            position: absolute;
+            width: 120px; /* Adjust size */
+            animation: flyIn 2s ease-in-out forwards, bwLoop 3s infinite;
+        }
 
-.left-wing {
-    transform: translateX(0px); /* Bring wings much closer */
-    animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
-}
+        .left-wing {
+            transform: translateX(0px); /* Bring wings much closer */
+            animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
+        }
 
-.right-wing {
-    transform: translateX(0px); /* Bring wings much closer */
-    animation: rightWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
-}
+        .right-wing {
+            transform: translateX(0px); /* Bring wings much closer */
+            animation: rightWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
+        }
 
-@keyframes leftWingFly {
-    0% { transform: translateX(-200px); opacity: 0; }
-    100% { transform: translateX(-10px); opacity: 1; }
-}
+        @keyframes leftWingFly {
+            0% { transform: translateX(-200px); opacity: 0; }
+            100% { transform: translateX(-10px); opacity: 1; }
+        }
 
-@keyframes rightWingFly {
-    0% { transform: translateX(200px); opacity: 0; }
-    100% { transform: translateX(10px); opacity: 1; }
-}
+        @keyframes rightWingFly {
+            0% { transform: translateX(200px); opacity: 0; }
+            100% { transform: translateX(10px); opacity: 1; }
+        }
 
-/* Removed fadeOut to keep logo visible */
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 1; } /* No more fading out */
-}
+        /* Removed fadeOut to keep logo visible */
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 1; } /* No more fading out */
+        }
 
-/* Black & White to Normal effect */
-@keyframes bwLoop {
-    0% { filter: grayscale(100%); }
-    50% { filter: grayscale(0%); }
-    100% { filter: grayscale(100%); }
-}
+        /* Black & White to Normal effect */
+        @keyframes bwLoop {
+            0% { filter: grayscale(100%); }
+            50% { filter: grayscale(0%); }
+            100% { filter: grayscale(100%); }
+        }
 
-/* Extra space at the bottom */
-.extra-space {
-    height: 300px;
-}
-
-
-
+        /* Extra space at the bottom */
+        .extra-space {
+            height: 300px;
         }
     </style>
 </head>
@@ -142,10 +137,6 @@
         <div class="site">
             <img src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/refs/heads/main/anime%20dekho.jpg" alt="Anime Dekho">
             <a href="https://animedekho.net/home/" target="_blank">Anime Dekho</a>
-        </div>
-        <div class="site">
-            <img src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/b61f556dddc53c5de496654e394c30b14031a380/deadtoons.jpeg" alt="Dead toons">
-            <a href="https://deadtoonsindia.in/" target="_blank">Dead toons</a>
         </div>
     </div>
 </body>
