@@ -51,10 +51,42 @@
             display: block;
             margin-top: 8px;
         }
+        
+        /* Animated Logo */
+        .logo-container {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+        .wing {
+            position: absolute;
+            width: 100px;
+            animation: flyIn 2s ease-in-out forwards, fadeOut 5s ease-in-out 4s forwards;
+        }
+        .left-wing {
+            left: -150px;
+            animation-delay: 0s;
+        }
+        .right-wing {
+            right: -150px;
+            animation-delay: 0s;
+        }
+        @keyframes flyIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
     <h1 class="animated-text">SWAGAT HAIN</h1>
+    <div class="logo-container">
+        <img class="wing left-wing" src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/refs/heads/main/wings-removebg-preview.png" alt="Left Wing">
+        <img class="wing right-wing" src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/refs/heads/main/wings-removebg-preview.png" alt="Right Wing">
+    </div>
     <img src="https://i.ibb.co/whdNyxdC/Web-Photo-Editor-1.jpg" alt="" border="0" class="full-width-image">
     <h2>Free Hindi Dub Anime Websites</h2>
     <div class="grid">
