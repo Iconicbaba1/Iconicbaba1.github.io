@@ -67,9 +67,12 @@
         }
 
         .left-wing {
-            transform: translateX(5px); /* Move left wing closer */
-            animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
-        }
+    transform: translateX(5px); /* Move slightly right */
+    height: 200px; /* Increase height */
+    width: auto; /* Maintain aspect ratio */
+    animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
+}
+
 
         .right-wing {
             transform: translateX(10px); /* Keep right wing slightly apart */
