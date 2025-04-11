@@ -9,7 +9,7 @@
     <style>
         @font-face {
             font-family: 'GothTitan';
-            src: url('GothTitan-0W5md.ttf') format('truetype'); /* Make sure the font is locally available */
+            src: url('GothTitan-0W5md.ttf') format('truetype');
         }
         body {
             background-color: #121212;
@@ -64,8 +64,6 @@
             display: block;
             margin-top: 8px;
         }
-
-        /* Animated Logo */
         .logo-container {
             position: relative;
             display: flex;
@@ -73,50 +71,40 @@
             align-items: center;
             height: 200px;
         }
-
         .wing {
             position: absolute;
-            width: 120px; /* Adjust size */
+            width: 120px;
             animation: flyIn 2s ease-in-out forwards, bwLoop 3s infinite;
         }
-
         .left-wing {
-            transform: translateX(5px) scale(1.1); /* Move slightly right */
-            height: 200px; /* Increase height */
-            width: auto; /* Maintain aspect ratio */
+            transform: translateX(5px) scale(1.1);
+            height: 200px;
+            width: auto;
             animation: leftWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
         }
-
         .right-wing {
-            transform: translateX(8px) scale(1.1); /* Keep right wing slightly apart */
-            height: 190px; /* Increase height */
-            width: auto; /* Maintain aspect ratio */
+            transform: translateX(8px) scale(1.1);
+            height: 190px;
+            width: auto;
             animation: rightWingFly 2s ease-in-out forwards, bwLoop 3s infinite;
         }
-
         @keyframes leftWingFly {
             0% { transform: translateX(-200px) scale(1.1); opacity: 0; }
             100% { transform: translateX(5px) scale(1.1); opacity: 1; }
         }
-
         @keyframes rightWingFly {
             0% { transform: translateX(200px) scale(1.1); opacity: 0; }
             100% { transform: translateX(8px) scale(1.1); opacity: 1; }
         }
-
-        /* No Fade Out */
         @keyframes fadeOut {
             0% { opacity: 1; }
-            100% { opacity: 1; } /* No fading out */
+            100% { opacity: 1; }
         }
-
-        /* Extra space at the bottom */
         .extra-space {
             height: 300px;
         }
     </style>
 </head>
-
 <body>
 
     <h1 class="animated-text">ICONIC BABA</h1>
@@ -125,6 +113,7 @@
         <img class="wing right-wing" src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/refs/heads/main/wings-right.png" alt="Right Wing">
     </div>
     <img src="https://i.ibb.co/whdNyxdC/Web-Photo-Editor-1.jpg" alt="" border="0" class="full-width-image">
+    
     <h2>Free Hindi Dub Anime Websites</h2>
     <div class="grid">
         <div class="site">
@@ -151,9 +140,25 @@
             <img src="https://raw.githubusercontent.com/Iconicbaba1/Iconicbaba1.github.io/refs/heads/main/anime%20dekho.jpg" alt="Anime Dekho">
             <a href="https://animedekho.net/home/" target="_blank">Anime Dekho</a>
         </div>
+    </div> <!-- Yaha grid close kiya -->
+
+    <!-- 🎬 Video Section -->
+    <div style="text-align: center; background-color: #1a1a1a; padding: 20px; border-radius: 20px; margin: 40px;">
+        <h2 style="color: #9b59b6; font-family: 'GothTitan', sans-serif;">
+            More Than a Married Couple – Episode 3 (Hindi)
+        </h2>
+        <video width="80%" controls style="border-radius: 15px; box-shadow: 0 0 20px #9b59b6;">
+            <source src="https://store-na-phx-1.gofile.io/download/web/2cd3d41b-4f91-47c3-96c5-88d3e2574996/More%20Than%20a%20Married%20Couple%2C%20But%20Not%20Lovers%20ep%203%20hindi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <a href="https://store-na-phx-1.gofile.io/download/web/2cd3d41b-4f91-47c3-96c5-88d3e2574996/More%20Than%20a%20Married%20Couple%2C%20But%20Not%20Lovers%20ep%203%20hindi.mp4" download style="color: #9b59b6; font-size: 18px; text-decoration: none;">
+            ⬇️ Download Episode 3
+        </a>
     </div>
+
     <footer>
-    <p>&copy; 2025 ICONIC BABA | <a href="about.html" target="_blank">About</a></p>
-</footer>
+        <p>&copy; 2025 ICONIC BABA | <a href="about.html" target="_blank">About</a></p>
+    </footer>
 </body>
 </html>
